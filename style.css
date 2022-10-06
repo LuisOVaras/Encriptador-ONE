@@ -1,0 +1,258 @@
+body{
+    background-color: #34372f;
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+
+}
+
+.header, .main, .footer{
+    width: 375px;
+    margin: auto;
+}
+/*header*/
+.header{
+    margin: 20px 0 50px 0;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    margin: 0 15px 0 0;
+}
+.titulo{
+    width: auto;
+    font-size: 26px;
+    color: #ecf8d4;
+}
+
+/*main*/
+.left{
+    color: #ecf8d4;
+    display: flex;
+    flex-direction: column;
+}
+.entrada{
+    font-family: 'Kanit', sans-serif ;
+    font-size: 18px;
+    border: none;
+    margin: 10px auto;
+    color: #ecf8d4;
+    background: #34372f;
+    width: 290px;
+    height: 275px;
+    resize: none;
+    border-radius: 10px;
+    border: none;
+
+}
+.entrada::placeholder{
+    color: #ecf8d4;
+    font-size: 18px;
+
+}
+.buttons{
+    color: #ecf8d4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.parrafo{
+    margin: 5px 0;
+}
+.button{
+    font-family: 'Kanit', sans-serif ;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 5px 0;
+    padding: 15px;
+    width: 80%;
+    color: #34372f;
+    background-color: #ecf8d4 ;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.right{
+    width: auto;
+    padding: 20px 0;
+    margin: 10px auto;
+    background-color: #f9fdf1;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+}
+
+.salida{
+    font-family: 'Kanit', sans-serif ;
+    font-size: 18px;
+    background-color: #f9fdf1;
+    color: #34372f;
+    border: none;
+    margin: 20px 0;
+    width: 290px;
+    height: auto;
+    resize: none;
+}
+.texto1{
+    font-size: 20px;
+    font-weight: bold;
+    color: #363636;
+}
+.texto2{
+    margin: 10px 0;
+    font-size: 14px;
+    font-weight: lighter;
+    color: #222233;
+}
+.copiar{
+    display: none;
+    font-family: 'Kanit', sans-serif ;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 5px auto;
+    padding: 15px;
+    width: 80%;
+    background-color: #f9fdf1;
+    color: #34372f;
+    border: 1px solid #34372f ;
+    border-radius: 20px;
+    cursor: pointer;
+}
+/*footer*/
+.footer{
+    padding: 15px 0;
+}
+.footer-text{
+    text-align: center;
+    font-size: 16px;
+    margin: 5px 0;
+}
+.footer-text a{
+    text-decoration: none;
+    color: #ecf8d4;
+}
+
+.footer-icon{
+    display: flex;
+    justify-content: center;
+}
+.footer-icon a img{
+    background-color: #f9fdf1;
+    border: 2px solid #f9fdf1;
+    border-radius: 50%;
+    margin: 5px;
+    width: 35px;
+}
+
+.atribucion{
+    margin: 15px 0 0 0;
+}
+.atribucion a{
+    font-size: 12px;
+    padding: 5px 0 0 0;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: rgba(236, 248, 212, .3);
+}
+
+
+
+@media screen and (min-width: 480px){
+
+    .header, .main, .footer{
+        width: auto;
+        margin: auto;
+    }
+    .header{
+        margin: 20px 0 50px 0;
+    }
+    .left{
+        flex-direction: column;
+        margin: 0 25px;
+    }
+    .entrada{
+        width: 430px;
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+        margin: 0 25px;
+    }
+    .salida{
+        margin: 0 15px;
+        width: auto;
+        height: auto;
+    }
+    .img-der{
+        width: auto;
+        margin: 0 auto;
+    }
+    .copiar{
+        margin: 5px auto;
+        justify-content: center;
+    }
+    .buttons{
+        flex-direction: row;
+    }
+    .button{
+        width: 60%;
+        margin: 5px;
+    }
+}
+
+@media screen and (min-width: 767px){
+    .header,.footer{
+        margin: auto;
+        width: 768px;
+    }
+    .header{
+        margin: 20px 0 50px 0;
+    }
+    .main{
+        display: flex;
+        flex-direction: row;
+    }
+    .left{
+        flex-direction: column;
+        margin: 0 25px;
+    }
+    .entrada{
+        width: 400px;
+        height: 500px;
+    }
+    .right{
+        margin: 0 25px;
+    }
+    .salida{
+        margin: 0 0 0 15px;
+        width: 300px;
+        height: auto;
+    }
+    .button{
+        width: 45%;
+        margin: 5px auto;
+    }
+}
+
+@media screen and (min-width: 950px){
+
+    .header, .main, .footer{
+        margin: auto;
+        width: 960px
+    }
+    .header{
+        margin: 20px 0 50px 0;
+    }
+    .salida{
+        margin: 0 0 0 15px;
+        width: 350px;
+        height: auto;
+    }
+    .left{
+        width: 50%;
+    }
+    .right{
+        width: 40%;
+    }
+
+}

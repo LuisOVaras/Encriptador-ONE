@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&display=swap');
+    </style>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+    <title>Challenge ONE - Encriptador</title>
+</head>
+<body>
+
+        <header class="header">
+            <div class="img-container">
+                <a href="index.html"><img src="./img/Logo.svg" class="logo"></a>
+            </div>
+            <h1 class="titulo">Encriptador de Texto</h1>
+        </header>
+
+        <main class="main">
+            <div class="left">
+                <textarea name="entrada" id="entrada" cols="30" rows="10" placeholder="Ingrese el texto aquí" class="entrada"></textarea>
+                <p class="parrafo"><img src="./img/bi_exclamation-circle-fill.svg"> Solo letras minúsculas y sin acentos</p>
+                <div class="buttons">
+                    <button type="submit" class="button" id="encriptar">Encriptar</button>
+                    <button type="submit" class="button" id="desencriptar">Desencriptar</button>
+                </div>
+            </div>
+
+            <div class="right">
+                <textarea name="resultado" id="salida" cols="20" rows="5" class="salida"></textarea>
+                <img src="./img/Muñeco.svg" class="img-der" id="img-der">
+                <h2 class="texto1" id="texto1">No se a encontrado ningun mensaje</h2>
+                <h3 class="texto2" id="texto2">Ingresa el texto que desees encriptar o desencriptar</h3>
+                <button type="button" id="copiar" class="copiar">Copiar!</button>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-text">
+                <a href="#">Developed with &#10084 by Luis Varas &copy 2022</a>
+            </div>
+            <div class="footer-icon">
+                <a href="https://www.linkedin.com/in/luis-o-varas/" target="_blank"><img src="./img/linkedin.png" alt="logo de linkedin"></a>
+                <a href="https://github.com/LuisOVaras" target="_blank"><img src="./img/github.png" alt="logo de github"></a>
+            </div>
+            <div class="atribucion">
+                <a href="https://www.flaticon.es/iconos-gratis/linkedin" title="linkedin iconos" target="_blank">Linkedin & Github - iconos creados por Freepik - Flaticon</a>
+            </div>
+        </footer>
+
+        <script>
+
+            document.getElementById("entrada").focus();
+
+            var btn = document.getElementById("encriptar");
+            btn.onclick = encriptar;
+            var btn2 = document.getElementById("desencriptar");
+            btn2.onclick = desencriptar;
+            var btn3 = document.getElementById("copiar");
+            btn3.onclick = copiar;
+        </script>
+</body>
+</html>
